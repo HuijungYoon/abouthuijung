@@ -2,11 +2,10 @@ import React from "react";
 import { css } from "@emotion/react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
-import { colors } from "../../../lib/colors";
+import { colors } from "../../../lib/palette";
 
 const Header = () => {
   const [ref, inView] = useInView({ initialInView: true });
-  console.log(inView);
 
   return (
     <>
@@ -67,15 +66,9 @@ const Contaier = css`
     transition: color 0.1s;
   }
   > .link-to-home {
-    color: ${colors.green1};
+    color: ${colors.orange[5]};
     &:hover {
-      color: ${colors.green2};
-    }
-  }
-  > .link-to-home {
-    color: ${colors.green1};
-    &:hover {
-      color: ${colors.green2};
+      color: ${colors.orange[4]};
     }
   }
   > .link-to-blog {

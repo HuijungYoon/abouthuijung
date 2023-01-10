@@ -24,6 +24,10 @@ const GlobalStyles = (
         --green1: rgba(0, 204, 173, 1);
         --green2: rgba(0, 179, 152, 1);
         --green3: rgba(0, 153, 130, 1);
+        --green0: rgba(0, 230, 195, 1);
+        --orange4: "ffc078";
+        --orange5: "ffa94d";
+
         @media (prefers-color-scheme: dark) {
           --white0: rgba(36, 36, 36, 1);
           --white0_t70: rgba(36, 36, 36, 0.7);
@@ -96,7 +100,7 @@ const GlobalStyles = (
           }
         }
         .font-regular {
-          font-weight: 300;
+          font-weight: 400;
         }
         .font-medium {
           font-weight: 500;
@@ -127,10 +131,11 @@ const GlobalWrapper = css`
 root.render(
   <>
     <BrowserRouter>
-      {GlobalStyles}
-      <div css={GlobalWrapper}></div>
-      <Header />
-      <RouteSwitch />
+      <div css={GlobalWrapper}>
+        {GlobalStyles}
+        <Header />
+        <RouteSwitch />
+      </div>
     </BrowserRouter>
   </>
 );

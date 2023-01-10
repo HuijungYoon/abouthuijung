@@ -11,4 +11,16 @@ export const colors = {
   green1: "var(--green1)",
   green2: "var(--green2)",
   green3: "var(--green3)",
+  orange: [
+    "#fff4e6",
+    "#ffe8cc",
+    "#ffd8a8",
+    "#ffc078",
+    "#ffa94d",
+    "#ff922b",
+    "#fd7e14",
+    "#f76707",
+    "#e8590c",
+    "#d9480f",
+  ],
 };
