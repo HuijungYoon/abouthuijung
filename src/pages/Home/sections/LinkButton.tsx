@@ -29,9 +29,11 @@ const LinkButtonCss = css`
   align-items: center;
   padding: 0.5em 1em;
   border-radius: 12px;
-  background-color: ${colors.orange[4]};
+  font-weight: 700;
+  color: white;
+  background-color: ${colors.orange[5]};
 
   &:hover {
-    background-color: ${colors.orange[3]};
+    background-color: ${colors.orange[4]};
   }
 `;
