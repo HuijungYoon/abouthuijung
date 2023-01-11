@@ -4,6 +4,7 @@ import Carrer from "./Carrer";
 import Home from "./Home";
 
 const RouteSwitch = () => {
+  console.log("테스트");
   return (
     <>
       <Routes>
