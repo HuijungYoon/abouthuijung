@@ -3,9 +3,11 @@ import { css } from "@emotion/react";
 import SectionTitle from "./SectionTitle";
 import { FadeIn } from "../../../components/common/FadeIn";
 import LinkButton from "./LinkButton";
+import Test from "../../Carrer/index";
 const Carrer = () => {
   return (
     <div css={Container}>
+      <Test />
       <SectionTitle>경력 기술</SectionTitle>
       <FadeIn className="item-container">
         <div className="company font-bold">아임유어박스</div>
