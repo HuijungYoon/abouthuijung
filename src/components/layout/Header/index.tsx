@@ -6,7 +6,6 @@ import { colors } from "../../../lib/palette";
 
 const Header = () => {
   const [ref, inView] = useInView({ initialInView: true });
-
   return (
     <>
       <div ref={ref} />

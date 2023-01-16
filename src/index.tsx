@@ -5,6 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import RouteSwitch from "./pages";
 import Header from "./components/layout/Header";
+import { Content } from "./components/layout/Content";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
@@ -134,7 +135,9 @@ root.render(
       <div css={GlobalWrapper}>
         {GlobalStyles}
         <Header />
-        <RouteSwitch />
+        <Content>
+          <RouteSwitch />
+        </Content>
       </div>
     </BrowserRouter>
   </>

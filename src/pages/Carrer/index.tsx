@@ -22,16 +22,26 @@ const detailMap = new Map(
 
 const Carrer = () => {
   const { id } = useParams<{ id: string }>();
-  // const { title, detail } = useMemo(() => detailMap.get(id)!, [id]);
+
+  console.log(id);
+  const { title, detail } = useMemo<any>(() => detailMap.get(id)!, [id]);
+
   return (
     <>
       <main css={Container}>
-        <p className="title">ss</p>
+        <p className="title">{title}</p>
       </main>
     </>
   );
 };
 
-const Container = css``;
+const Container = css`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  > .title {
+    margin: 1.5rem 0 2.5rem;
+  }
+`;
 
 export default Carrer;
