@@ -1,7 +1,9 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { css } from "@emotion/react";
 import ReactMarkDown from "react-markdown";
 import imyourbox from "./imyourbox.md";
+import atn from "./atn.md";
+import intekplus from "./intekplus.md";
 import { useParams, useNavigate } from "react-router-dom";
 import { FiChevronLeft } from "react-icons/fi";
 import { colors } from "../../lib/palette";
@@ -14,7 +16,12 @@ const data = [
   {
     id: "ATN",
     title: "ATN 경력 상세페이지입니다.",
-    detail: "",
+    detail: atn,
+  },
+  {
+    id: "intekplus",
+    title: "IntekPlus 경력 상세페이지입니다.",
+    detail: intekplus,
   },
 ];
 
@@ -24,9 +31,14 @@ const detailMap = new Map(
 
 const Carrer = () => {
   const { id } = useParams<{ id: string }>();
+  const [tosText, setTosText] = useState("");
   const navigate = useNavigate();
   const { title, detail } = useMemo(() => detailMap.get(id)!, [id]);
-
+  useEffect(() => {
+    fetch(detail)
+      .then((res) => res.text())
+      .then((text) => setTosText(text));
+  });
   const onPrevPaeClcik = () => {
     navigate(-1);
   };
@@ -42,7 +54,7 @@ const Carrer = () => {
           />
           {title}
         </p>
-        <ReactMarkDown css={MarkdownContainerCss}>{detail}</ReactMarkDown>
+        <ReactMarkDown css={MarkdownContainerCss}>{tosText}</ReactMarkDown>
       </main>
     </>
   );

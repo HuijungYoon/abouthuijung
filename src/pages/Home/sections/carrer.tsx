@@ -34,7 +34,7 @@ const Carrer = () => {
         <div className="role font-medium">2018.10 ~ 2019.02</div>
         <ul className="buttons">
           <li>
-            <LinkButton to="/carrer/intekpls">자세히보기</LinkButton>
+            <LinkButton to="/carrer/intekplus">자세히보기</LinkButton>
           </li>
         </ul>
       </FadeIn>
