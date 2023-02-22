@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import Profile from "./sections/profile";
 import Skill from "./sections/skill";
 import Carrer from "./sections/carrer";
+import Education from "./sections/education";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Profile />
       <Skill />
       <Carrer />
+      <Education />
     </div>
   );
 };

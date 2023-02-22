@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import SectionTitle from "./SectionTitle";
 import { FadeIn } from "../../../components/common/FadeIn";
 import LinkButton from "./LinkButton";
+import { colors } from "../../../lib/palette";
 
 const Carrer = () => {
   return (
@@ -11,14 +12,22 @@ const Carrer = () => {
       <FadeIn className="item-container">
         <div className="company font-bold">아임유어박스</div>
         <div className="role font-regular">프론트엔드 엔지니어</div>
-        <div className="role font-medium">2021.10 ~ 현재</div>
+        <div className="role font-medium">2019.07 ~ 현재(약3년8개월)</div>
         <ul className="buttons">
           <li>
+            <a
+              href="https://imyourbox.com/price.html"
+              target="_blank"
+              css={Button}
+            >
+              홈페이지
+            </a>
+
             <LinkButton to="/carrer/imyourbox">자세히보기</LinkButton>
           </li>
         </ul>
       </FadeIn>
-      <FadeIn className="item-container">
+      {/* <FadeIn className="item-container">
         <div className="company font-bold">에이티엔</div>
         <div className="role font-regular">프론트엔드 엔지니어</div>
         <div className="role font-medium">2019.07 ~ 2021.10</div>
@@ -27,7 +36,7 @@ const Carrer = () => {
             <LinkButton to="/carrer/ATN">자세히보기</LinkButton>
           </li>
         </ul>
-      </FadeIn>
+      </FadeIn> */}
       <FadeIn className="item-container">
         <div className="company font-bold">인텍플러스</div>
         <div className="role font-regular">반도체기계제어과</div>
@@ -43,6 +52,22 @@ const Carrer = () => {
 };
 
 export default Carrer;
+
+const Button = css`
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1em;
+  border-radius: 12px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  background-color: ${colors.orange[5]};
+
+  &:hover {
+    background-color: ${colors.orange[4]};
+  }
+`;
 
 const Container = css`
   display: flex;
@@ -68,6 +93,8 @@ const Container = css`
     .buttons {
       display: flex;
       > li {
+        display: flex;
+        gap: 5px;
         padding: 0;
         font-size: 0.85rem;
         &::before {
