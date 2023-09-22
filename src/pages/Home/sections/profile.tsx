@@ -36,6 +36,7 @@ export default Profile;
 
 const Container = css`
   width: 100%;
+
   display: flex;
   flex-direction: column;
   > .title {

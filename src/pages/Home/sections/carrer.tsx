@@ -10,9 +10,25 @@ const Carrer = () => {
     <div css={Container}>
       <SectionTitle>경력 기술</SectionTitle>
       <FadeIn className="item-container">
+        <div className="company font-bold">
+          (사이드프로젝트) 에이티엔 홈페이지 리뉴얼
+        </div>
+        <div className="role font-regular">프론트/백엔드 작업</div>
+        <div className="role font-medium">2023.04 ~ 2023.05</div>
+        <ul className="buttons">
+          <li>
+            <a href="https://newatn.co.kr" target="_blank" css={Button}>
+              홈페이지
+            </a>
+
+            <LinkButton to="/carrer/atn">자세히보기</LinkButton>
+          </li>
+        </ul>
+      </FadeIn>
+      <FadeIn className="item-container">
         <div className="company font-bold">아임유어박스</div>
         <div className="role font-regular">프론트엔드 엔지니어</div>
-        <div className="role font-medium">2019.07 ~ 현재(약3년8개월)</div>
+        <div className="role font-medium">2019.07 ~ 2023.03.28</div>
         <ul className="buttons">
           <li>
             <a

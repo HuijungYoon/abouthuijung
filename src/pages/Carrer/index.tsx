@@ -16,8 +16,8 @@ const data = [
     detail: imyourbox,
   },
   {
-    id: "ATN",
-    title: "ATN 경력 상세페이지입니다.",
+    id: "atn",
+    title: "ATN 홈페이지 외주작업 상세페이지입니다.",
     detail: atn,
   },
   {
