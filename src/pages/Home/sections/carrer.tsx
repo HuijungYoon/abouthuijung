@@ -14,7 +14,7 @@ const Carrer = () => {
           (사이드프로젝트) 에이티엔 홈페이지 리뉴얼
         </div>
         <div className="role font-regular">프론트/백엔드 작업</div>
-        <div className="role font-medium">2023.04 ~ 2023.05</div>
+        <div className="role font-medium">2023.04 ~ 2023.05(약 2개월)</div>
         <ul className="buttons">
           <li>
             <a href="https://newatn.co.kr" target="_blank" css={Button}>
@@ -28,7 +28,9 @@ const Carrer = () => {
       <FadeIn className="item-container">
         <div className="company font-bold">아임유어박스</div>
         <div className="role font-regular">프론트엔드 엔지니어</div>
-        <div className="role font-medium">2019.07 ~ 2023.03.28</div>
+        <div className="role font-medium">
+          2019.07 ~ 2023.03.28 (약 3년8개월)
+        </div>
         <ul className="buttons">
           <li>
             <a
@@ -56,7 +58,7 @@ const Carrer = () => {
       <FadeIn className="item-container">
         <div className="company font-bold">인텍플러스</div>
         <div className="role font-regular">반도체기계제어과</div>
-        <div className="role font-medium">2018.10 ~ 2019.02</div>
+        <div className="role font-medium">2018.10 ~ 2019.02(약 5개월)</div>
         <ul className="buttons">
           <li>
             <LinkButton to="/carrer/intekplus">자세히보기</LinkButton>
